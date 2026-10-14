@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: shieldx-url-scanner
-    runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: streamlit run app.py --server.address 0.0.0.0 --server.port $PORT
-    healthCheckPath: /_stcore/health
